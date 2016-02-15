@@ -1,6 +1,6 @@
 *{ margin:0px; padding:0px; }
 
-a { color:#ccc; }
+a { text-decoration:none !important; outline:none !important;  }
 a:hover { text-decoration:none;}
 
 body { background:#fff !important; }
@@ -104,7 +104,7 @@ margin:65px 5% 60px 5%; color:#142030; }
 
 /* FAQ's NAV */
 .faq-nav { margin:0 5% 80px 5%; float:left; width:90%; }
-.faq-nav .actives a{ color:#10aa9a; }
+.faq-nav .actives a{ color:#10aa9a; text-decoration:none; outline:none; }
 .faq-nav a{ color:#10aa9a; }
 .faq-nav a:hover{ color:#10aa9a; text-decoration:none; }
 .faq-intro-nav { float:left; width:86%; margin:50px 7% 50px 7%; }
@@ -198,6 +198,17 @@ margin:65px 5% 60px 5%; color:#142030; }
 .ft-list li a:hover { color:#0eb6a4; text-decoration:none; }
 .ft-list li a:focus { color:#24ccba; }
 .ft-cpyrt-txt { font-family:'Open Sans', sans-serif; font-size:12px; font-weight:400; color:#5f5f5f; }
+.scrollup {
+    width: 32px;
+    height: 32px;
+    position: fixed;
+    bottom: 50px;
+    right: 100px;
+    display: none;
+    background: url(../images/scrollup_01.png) no-repeat;
+	z-index:1000;
+}
+.scrollup:hover { background: url(../images/scrollup_02.png) no-repeat; }
 /* FOOTER NAV */
 
 

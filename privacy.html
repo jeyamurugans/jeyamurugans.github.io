@@ -257,7 +257,7 @@ For customer service or additional information regarding your Card, please conta
             <p>CBW Bank <b>does not</b> share with our affiliates. Non-Affiliates Companies not related by common ownership or control. They can be financial and nonfinancial companies.</p><p>CBW Bank <b>does not</b> share with non-affiliates so they can market to you. Joint Marketing A formal agreement between nonaffiliated financial companies that together market financial products or services to you.</p>
             <p>CBW Bank <b>doesn't</b> jointly market.</p>
             </div>
-             
+            
             
             <!-- CBW Privacy Statement Nav -->
             
@@ -267,10 +267,13 @@ For customer service or additional information regarding your Card, please conta
 
 
     </div>
+     <a href="#" class="scrollup"></a>
     
 
    
 </div>
+
+
 <!-- PAGE CONTAINER -->
 
 <!-- PAGE FOOTER -->
@@ -334,5 +337,25 @@ For customer service or additional information regarding your Card, please conta
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+<script>
+$(document).ready(function () {
+
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 100) {
+            $('.scrollup').fadeIn();
+        } else {
+            $('.scrollup').fadeOut();
+        }
+    });
+
+    $('.scrollup').click(function () {
+        $("html, body").animate({
+            scrollTop: 0
+        }, 600);
+        return false;
+    });
+
+});
+</script>
 </body>
 </html>

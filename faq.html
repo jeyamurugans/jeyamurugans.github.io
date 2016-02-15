@@ -26,9 +26,9 @@
 <body>
 
 
-  		<div class="sdic-nav visible-sm visible-xs">
-        	 <a href="https://onecard.yantracard.com/CSSP-UI/login.xhtml" target="_new">LOG IN</a> |  <a href="https://onecard.yantracard.com/CSSP-UI/login.xhtml" target="_new">SIGN UP</a>
-        </div>
+<div class="sdic-nav visible-sm visible-xs">
+     <a href="https://onecard.yantracard.com/CSSP-UI/login.xhtml" target="_new">LOG IN</a> |  <a href="https://onecard.yantracard.com/CSSP-UI/login.xhtml" target="_new">SIGN UP</a>
+</div>
 
 <!-- PAGE HEADER -->
 	<nav class="navbar">
@@ -381,12 +381,11 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
 <script>
-$(document).ready(function(){
-$('.panel-title a[href]').on('click', function () { 		
-    $('this').addClass('actives');
-    $(this).removeClass('actives');
- });
-	 });
+
+$(".panel-title").on('click', function()
+{	$('.panel-title').removeClass('actives');
+	$(this).addClass("actives");
+});
 </script>
 </body>
 </html>
