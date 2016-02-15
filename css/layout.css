@@ -214,7 +214,7 @@ margin:65px 5% 60px 5%; color:#142030; }
 
 @media only screen and (min-width : 320px) {
 	.container { width:100% !important; padding:0 0px !important; }	
-	.home-mc-img { width:100%; margin:0px 0 0 0; background:url(../images/mac.png) no-repeat right; float:left; height:329px; }
+	.home-mc-img { width:100%; margin:0px 0 0 0; background:url(../images/mac.jpg) no-repeat right; float:left; height:329px; }
 	.home-img { width:100%; margin:30px 0 0 0; background:url(../images/banner_4_small_phone.jpg) no-repeat center; height:223px; }
 	.home-mc-hd { float:left; width:100%; text-transform:uppercase; letter-spacing:.20em; margin:30px 0px 20px 0px; font-family:'Montserrat', sans-serif; font-size:14px; font-weight:500; color:#a2a6ab; text-align:center; }
 	.home-hd { width:100%; text-align:center; text-transform:uppercase; letter-spacing:.22em; margin:40px 0; font-family:'Montserrat', sans-serif; font-size:16px; font-weight:500; color:#a2a6ab; }
