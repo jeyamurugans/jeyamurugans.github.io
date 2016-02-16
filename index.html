@@ -22,10 +22,11 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css" />
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+<script src="features.js"></script>
 <!--Script-->
 </head>
-<body>
+<body ng-app="featuresApp">
 
 	<div class="sdic-nav visible-sm visible-xs">
     	<a href="https://onecard.yantracard.com/CSSP-UI/login.xhtml" target="_new">LOG IN</a> |  <a href="https://onecard.yantracard.com/CSSP-UI/login.xhtml" target="_new">SIGN UP</a>
@@ -48,7 +49,7 @@
 <!-- PAGE HEADER -->
 
 <!-- PAGE CONTAINER -->
-<div class="container">
+<div class="container" ng-controller="featuresController">
 
     <!-- Home Banner -->
     <div class="home-img"></div>    
@@ -62,26 +63,63 @@
     
         <div class="home-hd">onecard features</div>
     
+    	<div class="hidden-xs">
     	<div class="col-lg-1 col-md-1"></div>
-    	<div class="col-lg-5 col-md-5 col-sm-12">
-    	<a href="#" class="ico-fdic"></a>
-        <a href="#" class="ico-mc"></a>
-        <a href="#" class="ico-linkb"></a>
-        <a href="#" class="ico-accessac"></a>
-        <a href="#" class="ico-recpay"></a>
-        <a href="#" class="ico-mcaccept"></a>
-        </div>
-    	<div class="col-lg-5 col-md-5 col-sm-0">
-        <div class="fture-desc">
-        	<div class="fture-desc-hd">
-				FDIC Insured for up to $250,000
+    	<div class="col-lg-5 col-md-5">
+        
+    		<div ng-repeat="fr in flist">
+	            <a href="" ng-click="selectFC(fr)" class="{{fr.ficocls}}  {{fr.idx == fs.idx ? fr.ficoclsatc : fr.ficocls}}"></a>
             </div>
-            <div class="fture-desc-txt">Your money is FDIC insured through CBW Bank to at least $250,000. It's safer than carrying cash! CBW Bank, Member FDIC.</div>
-        </div>
+            
+    	</div>
+    
+        <div class="col-lg-5 col-md-5 col-sm-12">
+        
+       
+            <div class="fture-desc2">
+                <div class="fture-desc-hd">
+                	{{fs.fheading}}
+                </div>
+                <div class="fture-desc-txt">
+	                {{fs.fdesc}}
+                </div>
+            </div>
+       
+       
+        
         </div>
     	<div class="col-lg-1 col-md-1"></div>
+        </div>
     </div>
-    <!-- Features Nav -->
+    
+    
+<div id="carousel-example-generic" class="carousel slide visible-xs" data-ride="carousel">
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">  
+  
+   	
+ 		<div ng-repeat="fr in flist" class="item {{fr.fcls}}">
+	    <img src="{{fr.fimg}}" class="car-img">
+          <div class="carousel-caption">
+               <div class="fture-desc">
+                    <div class="fture-desc-hd">{{fr.fheading}}</div>
+                    <div class="fture-desc-txt">{{fr.fdesc}}</div>
+               </div>
+          </div>
+         
+          
+		</div>        
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+   	<img src="images/left.png" class="imglr-ico">
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+   <img src="images/right.png">
+  </a>
+</div>
+<!-- Features Nav -->
         
     <!-- Money Transfer Nav -->
     <div class="mt-nav">
@@ -121,10 +159,7 @@
         	<div class="home-mc-img"></div>
         </div>
     
-        
-       
 
-        
      </div>
     <!-- MasterCard Nav -->
 
@@ -187,7 +222,6 @@
       
     </footer>
 <!-- PAGE FOOTER -->
-
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>

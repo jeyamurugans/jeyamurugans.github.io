@@ -50,21 +50,32 @@ body { background:#fff !important; }
 .fture-nav { float:left; width:100%; margin:40px 0 0 0; }
 .ico-fdic { background:url(../images/ico-safe1.svg) no-repeat left top; height:80px; width:80px; margin:15px 20px; float:left; }
 .ico-fdic:hover { background:url(../images/ico-safe2.svg) no-repeat left top; }
+.ico-fdic-active { background:url(../images/ico-safe2.svg) no-repeat left top; }
 .ico-mc { background:url(../images/ico-mc1.svg) no-repeat left top; height:80px; width:80px;  margin:15px 20px; float:left; }
 .ico-mc:hover { background:url(../images/ico-mc2.svg) no-repeat left top; }
+.ico-mc-active { background:url(../images/ico-mc2.svg) no-repeat left top; }
 .ico-linkb { background:url(../images/ico-computer1.svg) no-repeat left top; height:80px; width:80px;  margin:15px 20px; float:left; }
 .ico-linkb:hover { background:url(../images/ico-computer2.svg) no-repeat left top; }
+.ico-linkb-active { background:url(../images/ico-computer2.svg) no-repeat left top; }
 .ico-accessac { background:url(../images/ico-paper1.svg) no-repeat left top; height:80px; width:80px;  margin:15px 20px; float:left; }
 .ico-accessac:hover { background:url(../images/ico-paper2.svg) no-repeat left top; }
+.ico-accessac-active { background:url(../images/ico-paper2.svg) no-repeat left top; }
 .ico-recpay { background:url(../images/ico-check1.svg) no-repeat left top; height:80px; width:80px;  margin:15px 20px; float:left; }
 .ico-recpay:hover { background:url(../images/ico-check2.svg) no-repeat left top; }
+.ico-recpay-active { background:url(../images/ico-check2.svg) no-repeat left top; }
 .ico-mcaccept { background:url(../images/ico-ATM1.svg) no-repeat left top; height:80px; width:80px;  margin:15px 20px; float:left; }
 .ico-mcaccept:hover { background:url(../images/ico-ATM2.svg) no-repeat left top; }
+.ico-mcaccept-active { background:url(../images/ico-ATM2.svg) no-repeat left top; }
 
 .fture-desc { float:left; width:100%; margin-top:10px; }
+.fture-desc2 { float:left; width:100%; margin-top:60px; }
 .fture-desc-hd { text-transform:uppercase; letter-spacing:.14em; font-family:'Montserrat', sans-serif; font-size:12px; padding-bottom:7px; font-weight:700; color:#142030; }
 .fture-desc-txt {  font-family:'Open Sans', sans-serif; font-size:15px; font-weight:400; color:#4a5868; padding:5px 0px; letter-spacing:.02em; }
-
+.car-img { width:80px; text-align:center; margin:auto; padding:30px 0; }
+.carousel { height:auto !important; }
+.carousel-caption { text-align:left !important; padding:0px !important; position:static !important; text-shadow:none !important; width:88%; margin:0 6%;}
+.carousel-control.left { background:none !important; }
+.carousel-control.right { background:none !important; }
 /* Home Styles */
 
 
