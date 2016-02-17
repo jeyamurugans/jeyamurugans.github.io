@@ -29,6 +29,7 @@ body { background:#fff !important; }
 .sdic-nav a:visited { color:#fff; text-decoration:none !important; outline:none; }
 
 .btn-signup { background:#0faa9a !important; border-radius:4px !important; color:#fff !important;  text-transform:uppercase; letter-spacing:.14em !important; font-family:'Montserrat', sans-serif; font-size:12px !important; font-weight:600; }
+.btn-mt-signup { background:#0faa9a !important; border-radius:4px !important; color:#fff !important; text-transform:uppercase; letter-spacing:.14em !important; font-family:'Montserrat', sans-serif; font-size:12px !important; font-weight:600; }
 .link-login { color:#142132; margin-right:10px; text-transform:uppercase; letter-spacing:.14em; font-family:'Montserrat', sans-serif; font-size:12px; font-weight:600; color:#142030; }
 .toprightnav { position:relative; z-index:100; }
 .toprightnav a:hover { text-decoration:none; }
@@ -131,7 +132,7 @@ margin:65px 5% 60px 5%; color:#142030; }
 .panel-group .panel+.panel { margin-top:0px !important; }
 .actives { color:#0faa9a !important; }
 .faqlist li { margin-left:17px;  }
-.faqlist2 li { margin-left:17px; list-style-type:circle; }
+.faqlist2 li { margin-left:17px; list-style-type:disc; }
 /* FAQ's NAV */
 
 
@@ -175,10 +176,9 @@ margin:65px 5% 60px 5%; color:#142030; }
 .shd-marg { margin-top:-20px; }
 .terms-sdesc { float:left;  line-height:1.7em; font-family:'Open Sans', sans-serif; font-size:15px; font-weight:500; color:#4a5868; letter-spacing:.005em; padding:5px 0 20px 0; text-align:justify; margin-left:80px; }
 .termslist { margin-top:10px; }
-.termssublist li { margin-left:17px; padding:3px 0; list-style-type:circle; }
+.termssublist li { margin-left:17px; padding:3px 0; list-style-type:disc; }
 
-.privacysublist li { margin-left:0px; padding:3px 0;}
-.privacysublist li:before { content: "-";  margin-right:5px; }
+.privacysublist li {  background: url(../images/line-blist.png) no-repeat; padding-left:10px;}
 .privacy-table { float:left; width:100%; margin:30px 0 20px 0; }
 .privacy-table th { background:#f7f8fa; padding:20px 20px; border-top:1px solid #ccd5da; border-bottom:1px solid #fff; border-right:1px solid #ccd5da; border-left:1px solid #ccd5da; font-family:'Open Sans', sans-serif; font-size:15px; font-weight:500; color:#142030;  letter-spacing:.02em;}
 .privacy-table td { vertical-align:middle; padding:20px 20px; font-family:'Open Sans', sans-serif; border:1px solid #ccd5da; font-size:14px; font-weight:500; color:#4a5868;  letter-spacing:.005em; }
@@ -190,7 +190,7 @@ margin:65px 5% 60px 5%; color:#142030; }
 .privacy-collapsenav .panel-body { padding:20px 0px; }
 .privacy-collapsenav .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body { border:none !important; }
 .privacy-collapsenav .fee-collapse-row { border-bottom:1px solid #ccd5da; float:left; width:100%; padding:10px 20px; }
-.privacy-table li { list-style:circle; margin-left:20px;}
+.privacy-table li { background: url(../images/line-blist.png) no-repeat; padding-left:10px;}
 
 .privacy-smdiv { float:left; width:100%; margin:0px 0 30px 0; }
 .privacy-smdiv-row { border-bottom:1px solid #ccd5da; float:left; width:100%; padding:20px 0px; }
@@ -247,8 +247,8 @@ margin:65px 5% 60px 5%; color:#142030; }
 	.home-mc-img { width:100%; margin:0px 0 0 0; background:url(../images/mcard-platform.jpg) no-repeat center; float:left; height:329px; }
 	.home-img { width:100%; margin:30px 0 0 0; background:url(../images/banner_3_big_phone.png) no-repeat center; height:315px; }
 	.home-mc-hd { float:left; width:100%; text-transform:uppercase; letter-spacing:.20em; margin:30px 0px 20px 0px; font-family:'Montserrat', sans-serif; font-size:14px; font-weight:500; color:#a2a6ab; text-align:center; }
-		.home-hd { width:100%; text-align:center; text-transform:uppercase; letter-spacing:.22em; margin:40px 0; font-family:'Montserrat', sans-serif; font-size:16px; font-weight:500; color:#a2a6ab; }
-			.mc-nav { margin:70px 5% 60px 5%; width:90%; float:left; }
+	.home-hd { width:100%; text-align:center; text-transform:uppercase; letter-spacing:.22em; margin:40px 0; font-family:'Montserrat', sans-serif; font-size:16px; font-weight:500; color:#a2a6ab; }
+	.mc-nav { margin:70px 5% 60px 5%; width:90%; float:left; }
 	.home-mc-signup { width:100%; float:left;  margin:10px 0px 50px 0px; text-align:center; }
 	.mt-nav { float:left; width:90%; margin:90px 5% 0 5%; }
 	.abt-yft-innav { border-top:1px solid #ccc; border-bottom:1px solid #ccc; width:100% !important; padding:0 10% !important; background:#f5f7f8; float:left; }

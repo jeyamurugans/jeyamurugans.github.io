@@ -14,8 +14,8 @@ angular.module('feesApp', [])
 		{idx:2,category:'Send Money',val:[
 			{desc:"To a OneCard user",amt:"$0.50",notes:"Instant"},
 			{desc:"To a debit card issued by another bank",amt:"$1",notes:"A few minutes"},
-			{desc:"To an outside checking/savings account",amt:"$0.50",notes:"A few days"},
-			{desc:"To domestic checking/savings account by Wire",amt:"$1",notes:"Same Day"}
+			{desc:"To an outside checking/savings account by Wire",amt:"$0.50",notes:"A few days"},
+			{desc:"Transfer from your checking/savings account",amt:"$1",notes:"Same Day"}
 		]},
 		{idx:3,category:'Spend Money',val:[
 			{desc:"Credit transaction with signature",amt:"$0",notes:""},
